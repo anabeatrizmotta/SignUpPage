@@ -1,0 +1,139 @@
+@import url(fontes/Poppins-Bold.ttf);
+@font-face {
+    font-family: poppinsbold;
+  src: url(fontes/Poppins-Bold.ttf);
+}
+@import url(fontes/Poppins-Regular.ttf);
+@font-face {
+    font-family: poppins;
+    src: url(fontes/Poppins-Regular.ttf);
+}
+
+*{
+    font-family: var(--fonte-padrao);
+    border: 0;
+}
+
+body {
+    background: var(--cor2);
+   /* background: linear-gradient(223deg, var(--color5) 0%, var(--color4) 100%); */
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    min-width: 90vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+:root {
+    --fonte-destaque: 'poppinsbold';
+    --fonte-padrao: 'poppins';
+    --cor1:  #5c9193 ;
+    --cor2: #a3c7c8;
+    --cor3: #7a1d0a;
+}
+
+
+h2 {
+    font-family: var(--fonte-destaque);
+    margin-bottom: 2.5rem;
+    position: relative;
+    margin-left: 20px;
+    
+}
+input {
+    width: 245px;
+    padding: 20px;
+    border: none;
+}
+
+
+form{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+
+
+h2::before {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 40px;
+    bottom: 3px;
+    left: 5px;
+    background: var(--cor3);
+}
+
+
+p, a {
+    font-family: var(--fonte-padrao);
+}
+
+
+.container {
+    background-color:white;
+    max-width: 350px;
+    min-height: 40vh;
+    padding: 2rem;
+    box-shadow: 5px 5px 10px  rgba(0, 0, 0, 0.363);
+    border-radius: 8px;
+}
+
+
+.botao {
+    margin-top: 2.5rem;
+    padding: 10px;
+    width: 20rem;
+    background: linear-gradient(223deg, var(--cor1) 0%, var(--cor2) 100%);
+    font-family: var(--fonte-destaque);
+    color: white;
+    cursor: pointer;
+    border-radius: 7px;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.botao:hover{
+    letter-spacing: 1px;
+}
+.ou {
+    text-align: center;
+}
+
+.footer {
+    text-align: center;
+}
+
+.campo-redesocial {
+    display: flex;
+    padding: 10px;
+    margin-left: 110px;
+}
+
+a {
+    padding: 10px;
+    width: 5px;
+    color: black;
+}
+.imagem {
+    margin-top: 50px;
+    margin-left: 100px;
+}
+
+p {
+    padding-top: 2px;
+    border-top: 2px solid var(--cor2);
+}
+
+.contato {
+    color: var(--cor1);
+    margin-top: 0px;
+}
+.contato i{
+    color: var(--cor1);
+    padding-top: 2px;
+    padding: 10px;
+}
